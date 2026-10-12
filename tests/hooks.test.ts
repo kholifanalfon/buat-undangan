@@ -1,8 +1,8 @@
 import { describe, it, expect, beforeEach } from 'vitest'
 import { renderHook, act } from '@testing-library/react'
-import { useGuest } from '../src/hooks/useGuest.ts'
-import { useWishes } from '../src/hooks/useWishes.ts'
-import { useDevice } from '../src/hooks/useDevice.ts'
+import { useGuest } from '../src/catalogs/wedding-os/hooks/useGuest.ts'
+import { useWishes } from '../src/catalogs/wedding-os/hooks/useWishes.ts'
+import { useDevice } from '../src/catalogs/wedding-os/hooks/useDevice.ts'
 
 describe('Core Hooks', () => {
   describe('useGuest', () => {

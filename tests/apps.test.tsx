@@ -1,10 +1,10 @@
 import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import { AppCouple } from '../src/components/apps/AppCouple.tsx'
-import { AppEvents } from '../src/components/apps/AppEvents.tsx'
-import { AppGallery } from '../src/components/apps/AppGallery.tsx'
-import { AppGift } from '../src/components/apps/AppGift.tsx'
-import { AppRSVP } from '../src/components/apps/AppRSVP.tsx'
+import { AppCouple } from '../src/catalogs/wedding-os/components/apps/AppCouple.tsx'
+import { AppEvents } from '../src/catalogs/wedding-os/components/apps/AppEvents.tsx'
+import { AppGallery } from '../src/catalogs/wedding-os/components/apps/AppGallery.tsx'
+import { AppGift } from '../src/catalogs/wedding-os/components/apps/AppGift.tsx'
+import { AppRSVP } from '../src/catalogs/wedding-os/components/apps/AppRSVP.tsx'
 
 describe('App Modules Rendering', () => {
   it('renders AppCouple with bride and groom names', () => {

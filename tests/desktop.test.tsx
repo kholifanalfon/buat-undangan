@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
-import { WinLockScreen } from '../src/components/desktop/WinLockScreen.tsx'
-import { WinDesktop } from '../src/components/desktop/WinDesktop.tsx'
+import { WinLockScreen } from '../src/catalogs/wedding-os/components/desktop/WinLockScreen.tsx'
+import { WinDesktop } from '../src/catalogs/wedding-os/components/desktop/WinDesktop.tsx'
 
 describe('Windows 11 Shell & Window Manager', () => {
   it('renders WinLockScreen with guest name and triggers unlock', () => {

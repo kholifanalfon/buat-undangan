@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
-import { OneUILockScreen } from '../src/components/mobile/OneUILockScreen.tsx'
-import { OneUIHomeScreen } from '../src/components/mobile/OneUIHomeScreen.tsx'
+import { OneUILockScreen } from '../src/catalogs/wedding-os/components/mobile/OneUILockScreen.tsx'
+import { OneUIHomeScreen } from '../src/catalogs/wedding-os/components/mobile/OneUIHomeScreen.tsx'
 
 describe('Samsung One UI 6.1 Shell', () => {
   it('renders OneUILockScreen with guest name and unlocks on click', () => {

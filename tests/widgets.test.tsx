@@ -1,13 +1,13 @@
 import { describe, it, expect } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
-import { WinAnalogClock } from '../src/components/desktop/WinWidgets/WinAnalogClock.tsx'
-import { WinLoveMeter } from '../src/components/desktop/WinWidgets/WinLoveMeter.tsx'
-import { WinCalendar } from '../src/components/desktop/WinWidgets/WinCalendar.tsx'
-import { WinWeather } from '../src/components/desktop/WinWidgets/WinWeather.tsx'
-import { WinStickyNotes } from '../src/components/desktop/WinWidgets/WinStickyNotes.tsx'
-import { WinPolaroid } from '../src/components/desktop/WinPolaroid.tsx'
-import { LightboxModal } from '../src/components/common/LightboxModal.tsx'
-import { weddingData } from '../src/data/weddingData.ts'
+import { WinAnalogClock } from '../src/catalogs/wedding-os/components/desktop/WinWidgets/WinAnalogClock.tsx'
+import { WinLoveMeter } from '../src/catalogs/wedding-os/components/desktop/WinWidgets/WinLoveMeter.tsx'
+import { WinCalendar } from '../src/catalogs/wedding-os/components/desktop/WinWidgets/WinCalendar.tsx'
+import { WinWeather } from '../src/catalogs/wedding-os/components/desktop/WinWidgets/WinWeather.tsx'
+import { WinStickyNotes } from '../src/catalogs/wedding-os/components/desktop/WinWidgets/WinStickyNotes.tsx'
+import { WinPolaroid } from '../src/catalogs/wedding-os/components/desktop/WinPolaroid.tsx'
+import { LightboxModal } from '../src/catalogs/wedding-os/components/common/LightboxModal.tsx'
+import { weddingData } from '../src/catalogs/wedding-os/data/weddingData.ts'
 
 describe('Windows 11 Desktop Widgets & Polaroid', () => {
   it('renders WinAnalogClock successfully', () => {
@@ -39,7 +39,7 @@ describe('Windows 11 Desktop Widgets & Polaroid', () => {
   it('renders WinStickyNotes with handwritten message', () => {
     render(<WinStickyNotes />)
     expect(screen.getByTestId('win-sticky-notes')).toBeInTheDocument()
-    expect(screen.getByText(/Notes to Guests/i)).toBeInTheDocument()
+    expect(screen.getByText(/Catatan Untuk Tamu/i)).toBeInTheDocument()
   })
 
   it('renders WinPolaroid and triggers click', () => {
@@ -61,7 +61,7 @@ describe('Windows 11 Desktop Widgets & Polaroid', () => {
       />
     )
     expect(screen.getByText('Our Trip')).toBeInTheDocument()
-    fireEvent.click(screen.getByLabelText('Tutup'))
+    fireEvent.click(screen.getByLabelText('Tutup Preview'))
     expect(closed).toBe(true)
   })
 })
